@@ -1,0 +1,218 @@
+
+<!DOCTYPE>
+<html>
+<head>
+<style>
+form{
+            width: 50%;
+            margin-left:50px;
+            }
+            h2{margin-left: 400px;}
+            label {
+                display: inline-block;
+                float: left;
+                clear: left;
+                width: 100px;
+                margin:5px;
+                text-align: left;
+            }
+            label {
+                display: inline-block;
+                float: left;
+                clear: left;
+                width: 150px;
+                margin:5px;
+                text-align: left;
+            }
+
+             #hstl{width:150px;}
+             #hostel{width:110px;}
+             #hostel2{margin:10px 0px 5px 0px;}
+             i{
+                display: inline-block;
+                float: left;
+                clear: left;
+                width: 150px;
+                margin:5px;
+                text-align: left;
+            }
+            span {
+                display: inline-block;
+                float: left;
+                clear: left;
+
+                margin:5px;
+                text-align: left;
+            }
+            input[type="text"] {
+                width:250px;
+                margin:5px 0px;
+            }
+            input[type="email"] {
+                width:250px;
+                margin:5px 0px;
+            }
+            input[type="date"] {
+                width:250px;
+                margin:5px 0px;
+            }
+            select {
+
+                margin:5px 0px;
+            }
+            input[type="radio"] {
+
+                margin:5px 0px;
+            }input[type="date"] {
+
+                margin:5px 0px;
+            }
+            input[type="number"] {
+
+                margin:5px 0px  ;
+            }
+
+</style>
+</head>
+<body>
+<h2 >REGISTRATION</h2>
+
+<form action="/action_page.php">
+  <fieldset>
+    <legend>BASIC DETAILS</legend>
+
+ <label for="fname">Form Number</label>
+     <input type="text" id="fname" name="fname"><br>
+
+    <label for="lname">Name</label>
+  <input type="text" id="lname" name="lname"><br>
+
+     <label for="Roll">Roll Number</label>
+<input type="text" id="Roll" name="Roll"><br>
+
+    <label for="gender">Gender</label>
+ Male
+    <input type="radio" id="gender" name="gender">
+    Female
+    <input type="radio" id="gender2" name="gender"></br>
+
+
+ <label for="birthday">DOB</label>
+     <input type="date" id="birthday" name="birthday"><br>
+
+     <label for="pwd">PWD</label>
+   YES
+     <input type="radio" id="pwd" name="pwd">
+    NO
+     <input type="radio" id="pwd2" name="pwd"></br>
+<label for="category">Category</label>
+<select id="category" name="category">
+
+<option value="select">select</option>
+  <option value="General">General</option>
+  <option value="OBC">OBC</option>
+  <option value="EWS">EWS</option>
+  <option value="SC">SC</option>
+  <option value="St">ST</option>
+
+</select></br>
+<label>Addess</label><label>
+<textarea id="textarea" name="textarea" rows="4" cols="50">
+</textarea></label>
+<span>PLEASE INPUT THE CORRECT PIN CODE</span><br>
+<span for="pin"><i>PIN CODE </i> <input type="number" id="pin" name="pin"> </span><br>
+<span for="std_phone"><i>PHONE OF STUDENT </i> <input type="number" id="std_phone" name="std_phone"> </span>
+<span for="std_phone"><i>PHONE OF GUARDIAN </i> <input type="number" id="prt_phone" name="prt_phone"> </span>
+<br>
+  </fieldset>
+</form>
+
+
+<form action="/action_page.php">
+  <fieldset>
+    <legend>ACADEMIC INFORMATION</legend>
+    <label for="course">COURSE</label>
+    <select id="course" name="course">
+
+    <option value="select">select</option>
+      <option value="btech">B.Tech</option>
+      <option value="barch">B.Arch</option>
+      <option value="mtech">M.Tech</option>
+      <option value="phd">Phd</option>
+      <option value="msc">Integrated M.sc</option>
+
+    </select></br>
+    <label for="fname">Branch</label>
+        <input type="text" id="branch" name="branch"><br>
+
+        <label for="sem">Semester</label>
+        <select id="sem" name="sem">
+
+        <option value="select">select</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+
+        </select>(for which all allocation will be done)</br>
+
+ <label for="fname">All India Rank</label>
+     <input type="text" id="fname" name="fname">(2020 JEE Main/GATE)<br>
+
+    <label for="lname">Category Rank</label>
+  <input type="text" id="lname" name="lname">(2020 JEE main/GATE)<br>
+
+     <label for="Roll">CGPA</label>
+<input type="text" id="Roll" name="Roll"><br>
+
+<label for="backlog">Backlog</label>
+YES
+<input type="radio" id="bkl" name="bkl">
+NO
+<input type="radio" id="bkl2" name="bkl"></br>
+
+<label for="hostelaccomodation" id="hstl">Hostel Accomodation</label>
+YES
+<input type="radio" id="hst" name="hstl">
+NO
+<input type="radio" id="hstl2" name="hstl">(IF ANY)</br>
+<label for="hostel"id="hostel">Name of Hostel</label>
+<input type="text" id="hostel2" name="hostel"><br>
+<label for="Room">Room Number</label>
+<input type="text" id="Room" name="Room"><br>
+</fieldset>
+</form>
+
+
+<form action="/action_page.php">
+  <fieldset>
+    <legend>ACCOUNT DETAILS FOR REFUNDING PROCESS</legend>
+
+ <label for="acc_name" class="label3">Account Holder Name</label>
+     <input type="text" id="acc_name" name="acc_number">As per Bank Passbook<br>
+
+    <label for="acc_number" class="label3">Account Number</label>
+  <input type="text" id="acc_number" name="acc_number"><br>
+
+     <label for="Ifsc" class="label3">IFSC CODE</label>
+<input type="text" id="Ifsc" name="Ifsc"><br>
+
+<label for="Bank_name" class="label3">Bank Name</label>
+<input type="text" id="Bank_name" name="Bank_name"><br>
+
+<label for="Branch" class="label3">Bank Branch</label>
+<input type="text" id="Branch" name="Branch"><br>
+
+</fieldset>
+</form>
+
+<footer>
+  By- UJJWAL KANT</br>
+  Roll No-1906048
+</footer>
+</body>
+</html>
